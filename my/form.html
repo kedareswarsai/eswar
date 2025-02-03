@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .aa{background-color: red;
+        color: white;}
+        .bb{
+            text-align: center;
+            padding-top:100px;
+            border: 2px black solid;
+            padding-bottom: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+    <h1>Doctor Appointment Form</h1></div>
+    <div class="bb">
+
+    <form action="/submit-appointment" method="POST">
+        <!-- Patient Information -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="contactNumber">Contact Number:</label><br>
+        <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Appointment Details -->
+        <label for="preferredDoctor">Preferred Doctor:</label><br>
+        <input type="text" id="preferredDoctor" name="preferredDoctor"><br><br>
+
+        <label for="preferredDate">Preferred Appointment Date:</label><br>
+        <input type="date" id="preferredDate" name="preferredDate" required><br><br>
+
+        <label for="preferredTime">Preferred Time:</label><br>
+        <select id="preferredTime" name="preferredTime">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
